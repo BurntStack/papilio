@@ -80,12 +80,7 @@ export const ReservationSection: React.FC<ReservationSectionProps> = ({
               <span className="text-[#8A7B72]">Party Size:</span>
               <span className="font-semibold text-[#2C231E]">{formData.guests} Guests</span>
             </div>
-            <div className="flex justify-between">
-              <span className="text-[#8A7B72]">Seating:</span>
-              <span className="font-semibold text-[#2C231E]">
-                {formData.seatingArea === 'indoor-calm' ? 'Tranquil Indoor' : 'Botanical Patio'}
-              </span>
-            </div>
+
             <div className="flex justify-between">
               <span className="text-[#8A7B72]">Location:</span>
               <span className="font-semibold text-[#2C231E]">Hanamkonda, Telangana</span>
@@ -221,42 +216,7 @@ export const ReservationSection: React.FC<ReservationSectionProps> = ({
             </div>
           </div>
 
-          {/* Seating Preference */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <button
-              type="button"
-              onClick={() => setFormData({ ...formData, seatingArea: 'indoor-calm' })}
-              className={`p-4 rounded-2xl border text-left transition-all ${
-                formData.seatingArea === 'indoor-calm'
-                  ? 'border-[#7E5259] bg-[#F7EDEE] ring-1 ring-[#7E5259]'
-                  : 'border-[#E0D5C7] bg-[#FAF6F0] hover:bg-white'
-              }`}
-            >
-              <p className="text-xs font-bold uppercase tracking-wider text-[#7E5259]">
-                Tranquil Indoor Room
-              </p>
-              <p className="text-xs text-[#6B5D55] mt-1">
-                Air-conditioned sanctuary with gentle acoustics and warm wooden aesthetics.
-              </p>
-            </button>
 
-            <button
-              type="button"
-              onClick={() => setFormData({ ...formData, seatingArea: 'botanical-patio' })}
-              className={`p-4 rounded-2xl border text-left transition-all ${
-                formData.seatingArea === 'botanical-patio'
-                  ? 'border-[#7E5259] bg-[#F7EDEE] ring-1 ring-[#7E5259]'
-                  : 'border-[#E0D5C7] bg-[#FAF6F0] hover:bg-white'
-              }`}
-            >
-              <p className="text-xs font-bold uppercase tracking-wider text-[#7E5259]">
-                Botanical Garden Patio
-              </p>
-              <p className="text-xs text-[#6B5D55] mt-1">
-                Lush natural plants, open sky breeze, and softly lit romantic evening ambience.
-              </p>
-            </button>
-          </div>
 
           {/* Special Occasion or Requests */}
           <div>
@@ -345,7 +305,7 @@ export const ReservationSection: React.FC<ReservationSectionProps> = ({
             Reserve Your Haven
           </h2>
           <p className="text-[#63554D] text-sm sm:text-base mt-2">
-            Enjoy priority seating in our tranquil indoor dining room or shaded botanical patio.
+            Enjoy priority seating in our tranquil indoor dining room.
           </p>
         </motion.div>
 
