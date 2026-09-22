@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --color-plum: #7E5259;
+  --color-plum-hover: #673E45;
+  --color-plum-light: #F6EDEE;
+  --color-gold: #C5A880;
+  --color-gold-dark: #A88656;
+  --color-gold-light: #FAF4EB;
+  --color-brand-bg: #FAF6F0;
+  --color-brand-sand: #EAE1D5;
+  --color-brand-espresso: #2C231E;
+  --color-brand-dark: #201C1A;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: #FAF6F0;
+  color: #2C231E;
+}
+
+::selection {
+  background-color: #7E5259;
+  color: #FAF6F0;
+}
+
+/* Custom fine scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8CCC0;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #BFAEA0;
+}
+
+/* Hide scrollbars for horizontal pill bars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Mobile tap optimization */
+* {
+  -webkit-tap-highlight-color: transparent;
+}

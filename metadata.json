@@ -1,0 +1,6 @@
+{
+  "name": "Papilio Cafe & Patisserie",
+  "description": "Modern artisanal cafe and patisserie in Hanamkonda featuring handcrafted pastries, gourmet dining, and a serene nature-inspired ambiance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
