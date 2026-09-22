@@ -119,7 +119,7 @@ export const ReservationSection: React.FC<ReservationSectionProps> = ({
                 required
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                placeholder="e.g. Sravani Rao"
+                placeholder="e.g. Srikar"
                 className="w-full px-4 py-2.5 rounded-xl bg-[#FAF6F0] border border-[#E0D5C7] text-sm text-[#2C231E] focus:outline-hidden focus:border-[#7E5259]"
               />
             </div>
